@@ -153,12 +153,10 @@ SMODS.Joker {
 
   calculate = function(self, card, context)
     if context.individual and context.cardarea == G.play then
-      local rank
-      if context.other_card.edition and context.other_card.edition.stone then
-        rank = 0
-      else
-        rank = context.other_card:get_id()
-      end
+      local rank = context.other_card:get_id()
+if rank < 1 then
+  rank = 0
+end
       if rank == 11 or rank == 12 or rank == 13 then rank = 10 end
       if rank == 14 then rank = 11 end
       local new_mult = card.ability.extra.mult - rank
