@@ -118,7 +118,7 @@ return {
         }
       },
       j_pl_nametag = {
-        name = 'Nametag',
+        name = 'ID Tag',
         text = {
           '{X:mult,C:white}X2{} Mult for every',
           '{C:attention}Joker{} with \'Joker\'',
@@ -253,7 +253,7 @@ return {
         }
       },
       j_pl_dunce = {
-        name = 'Dunce',
+        name = 'Flunker',
         text = {
           'Played cards give',
           '{C:mult}+#1#{} Mult',
